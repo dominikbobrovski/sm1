@@ -1,58 +1,26 @@
+/*Dominik Bobrovski П43021 вариант 1) Задан массив A, содержащий 10 целых случайных чисел от 0 до 20.
+Найти произведение элементов этого массива. (rand()%21) */
 #include <iostream>
 #include <ctime>
 using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
-	/*  n 1
-	srand(time(0));
-   const int n = 100;
-   int arr[n];
-   int a = 0;
-   for(int i = 0;i < n;i++)arr[i] = rand() % 100;
-   for(int i = 0;i < n;i++) {
-   a = a + arr[i];
-   }
-   cout << a << endl;
-   */
-
-
-
-
-   /*  n 2
-	srand(time(0));
-	const int n = 80;
+	const int n = 10;
 	int arr[n];
-	int a = 0;
-	for(int i = 0;i < n;i++)arr[i] = rand() % 100;
-	for(int i = 0;i < n;i++) {
-   if(arr[i] > 0){
-	 a = a + arr[i];
-   }
-	}
-	cout << a << endl;
-	*/
-	/* n 3
-	 srand(time(0));
-	 const int n = 60;
-	 int arr[n];
-	 int a = 0;
-	 for(int i = 0;i < n;i++)arr[i] = rand() % 100;
-	 for(int i = 0;i < n;i++) {
-	 if(arr[i] % 3 == 0)
-	   a++;
-	 }
-	 cout << a << ' ';
-	 */
-	 /* n 4
+	long long x = 1;
 	srand(time(0));
-	 const int n = 90;
-	 int arr[n];
-	 int a = 1;
-	 for(int i = 0;i < n;i++)arr[i] = rand() % 100;
-	 for(int i = 0;i < n;i++) {
-	 if(arr[i] % 2 == 1)
-	   a = a * arr[i];
-	 }
-	 cout << a << ' ';
-	*/
+	for (int i = 0; i < n; i++)
+		arr[i] = rand() % 21;
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << ' ';
+	}
+	for (int i = 0; i < n; i++) {
+		x = x * arr[i];
+	}
+	cout << endl << x << endl;
+
+
+
+
+	
 }
